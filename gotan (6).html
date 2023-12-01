@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/got.css">
+</head>
+<body>
+    <header>
+        <nav>   
+            <a href="index.html"><img src="img/gothic-wardrobe-high-resolution-logo-black-transparent.png"; height="110" width="200"></a>
+            <div class="navvv">
+            <a href="index.html">♡Home</a>
+            <a href="About.html">♡About</a>
+            <a href="Otzyv.html">♡Reviews</a>
+            <a href="Contact.html">♡Contact</a>
+            </div>
+        </nav>
+    </header>
+<div class="miantovar">
+
+    <div class="slider-container">
+
+        <div class="slider">
+
+            <div class="slide"><img src="img/sinf/platya (1).jpg " alt="Slide 1"></div>
+            <div class="slide"><img src="img/sinf/platya (11).jpg " alt="Slide 2"></div>
+            <div class="slide"><img src="img/sinf/ykrashenie (8).jpg " alt="Slide 3"></div>
+        </div>
+    
+        <button class="prev" onclick="plusSlides(-1)">❮</button>
+        <button class="next" onclick="plusSlides(1)">❯</button>
+        
+    
+    </div>
+        <div class="text">
+    <h1>Sinful</h1>
+    <h1>59$</h1>
+    <h2>- Gothic Pack<br><br>
+        Прозрачные ткани, ажурные узоры и романтические детали делают этот готический пак<br> идеальным выбором для тех, кто ищет таинственный шарм с прикосновением романтики.</h2>
+        <div class="buttt"><button class="button-80" role="button">Buy now</button></div>
+        </div>
+        
+</div>
+
+
+    <script>
+        let slideIndex = 1;
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.transform = "translateX(" + -400 * (slideIndex - 1) + "px)";
+            }
+        }
+    </script>
+</body>
+</html>
